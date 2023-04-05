@@ -1,0 +1,52 @@
+{
+  "name": "$$PKG_FULL_NAME_UI$$",
+  "version": "0.0.1",
+  "author": "$$AUTHOR$$",
+  "description": "",
+  "license": "MIT",
+  "module": "dist/index.esm.js",
+  "main": "dist/index.common.js",
+  "publishConfig": {
+    "registry": "https://$$REGISTRY$$/"
+  },  
+  "watch": {
+    "build": {
+      "patterns": [
+        "src"
+      ]
+    }
+  },
+  "scripts": {
+    "build": "node build/index.js",
+    "build:js": "node build/script.javascript.js",
+    "build:css": "node build/script.css.js",
+    "watch": "npm-watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": "",
+  "homepage": "",
+  "devDependencies": {
+    "@rollup/plugin-buble": "^0.21.3",
+    "@rollup/plugin-json": "^4.0.0",
+    "@rollup/plugin-node-resolve": "^11.2.1",
+    "@rollup/plugin-replace": "^2.4.2",
+    "autoprefixer": "^10.0.2",
+    "chalk": "^4.1.0",
+    "core-js": "^3.0.0",
+    "cssnano": "^4.1.10",
+    "fs-extra": "^8.1.0",
+    "npm-watch": "^0.11.0",
+    "open": "^7.3.0",
+    "postcss": "^8.1.9",
+    "quasar": "^2.6.0",
+    "rimraf": "^3.0.0",
+    "rollup": "^2.45.0",
+    "rtlcss": "^2.6.1",
+    "sass": "1.32.0",
+    "uglify-js": "^3.13.3",
+    "zlib": "^1.0.5"
+  }
+}
